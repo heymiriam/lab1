@@ -110,9 +110,8 @@ public class Model {
 
     public void setFirstName(String firstName){
         System.out.println(firstName.length());
-        if(firstName.length()){
-            firstName>3 && firstName<26;
-            return firstName;
+        if(firstName.length()>3 && firstName.length()<26){
+            this.firstName=firstName;
         }else{
             System.out.println("First name should be more than 3 characters and less than 26 characters");
         }
@@ -127,26 +126,20 @@ public class Model {
     public void setLastName(String lastName){
         System.out.println(lastName.length());
         if(lastName.length()>3 && lastName.length()<26){
-            return lastName;
+            this.lastName=lastName;
         }else{
             System.out.println("Last name should be more than 3 characters and less than 26 characters");
         }
     }
 
     public void setTraveler(boolean canTravel){
-        if(canTravel=true){
             this.canTravel=canTravel;
-        }else{
-        System.out.println("Can't travel");
-        }
+
     }
 
     public void setSmoker(boolean smokes){
-        if(smokes=false){
             this.smokes=smokes;
-        }else{
-            System.out.println("Can smoke");
-        }
+
     }
 
 
@@ -157,7 +150,7 @@ public class Model {
     public void setWeight(double weight){
         public static weight() {
             if (weight > 80 && weight < 280) {
-                return weight;
+                this.weight=weight;
             } else {
                 System.out.println("Weight should be more than 80lb and less than 280lb");
             }
@@ -173,7 +166,7 @@ public class Model {
 
     public void setHeight(int height){
             if(weight>24 && weight<84){
-                return height;
+                this.height=height;
             }else{
                 System.out.println("Height should be more than 24ft and less than 84ft");
             }
@@ -194,7 +187,8 @@ public class Model {
      */
     public String getHeightInFeetAndInches(){
             System.out.println("5 feets");
-            System.out.println("");
+            System.out.println("5 feet 1 inch");
+            System.out.println("5 feet 6 inches");
     }
 
     public long getWeightKg(){
