@@ -11,7 +11,7 @@ public class Driver {
         public static final int TRAVEL_BONUS_DOLLARS_PER_HOUR = 4;
         public static final int SMOKER_DEDUCTION_DOLLARS_PER_HOUR = 10;
 
-        public int calculatePayDollarsPerHour()
-        public void displayModelDetails()
+        public int calculatePayDollarsPerHour();
+        public void displayModelDetails();
     }
 }

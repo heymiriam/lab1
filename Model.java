@@ -178,7 +178,8 @@ public class Model {
      * @param pounds pounds (lb)
      */
     public void setWeightInPounds(double pounds){
-        this.pounds=weight;
+        this.pounds=pounds;
+        private pounds=weight*2.205;
         System.out.println(pounds + " lb");
     }
     /**
@@ -207,10 +208,7 @@ public class Model {
         private pounds= kilograms*0.454;
         }
 
-        public void setHeight(int feet, int inches){
-        this.feet=feet;
-        this.inches=inches;
-    }
+        public void setHeight(int feet, int inches);
 
         public void setHeight(int inches){
         this.inches=inches;
